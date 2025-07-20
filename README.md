@@ -3,7 +3,7 @@
 ## 🔧 Інструкції з налаштування та запуску проекту
 
 ### ⚙️ Вимоги
-- Java 11+
+- Java 22+
 - Maven 3.5+
 - IDE (наприклад, IntelliJ IDEA)
 - Браузер для перегляду Allure-звітів
@@ -13,7 +13,7 @@
 1. **Клонувати репозиторій**
    ```bash
    git clone https://github.com/ValeriiaDenisova/petstore-autotests.git
-   cd petstore-api-tests
+   cd petstore-autotests
    
 2. **Запустити тести з Maven**
     ```bash
