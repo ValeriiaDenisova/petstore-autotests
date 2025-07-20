@@ -12,7 +12,7 @@
 
 1. **Клонувати репозиторій**
    ```bash
-   git clone https://github.com/your-username/petstore-api-tests.git
+   git clone https://github.com/ValeriiaDenisova/petstore-autotests.git
    cd petstore-api-tests
    
 2. **Запустити тести з Maven**
