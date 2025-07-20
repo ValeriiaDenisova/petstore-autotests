@@ -3,3 +3,4 @@ target/
 .idea
 allure-results
 logs
+/petstore-autotests.iml
