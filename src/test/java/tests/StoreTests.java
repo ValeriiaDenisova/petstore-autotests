@@ -12,16 +12,9 @@ import java.util.Map;
 
 import static org.hamcrest.Matchers.equalTo;
 
-public class StoreTests {
+public class StoreTests extends BaseTest {
 
-    private static final Logger logger = LoggerFactory.getLogger(StoreTests.class);
-
-    @BeforeMethod
-    public void logTestStart(Method method) {
-        logger.info("========== STARTING TEST: {} ==========", method.getName());
-    }
-
-    String orderId = "1";
+    int orderId = 5;
 
     @Test(description = "GET /store/inventory. Returns pet inventories by status")
     public void returnsPetInventoriesByStatus() {
@@ -63,13 +56,13 @@ public class StoreTests {
                 .get("/store/order/" + orderId)
                 .then()
                 .statusCode(200)
-                .body("id", equalTo(1));
+                .body("id", equalTo(orderId));
     }
 
     @Test(description = "GET /store/order/{orderId}. Find purchase order by non exist ID")
     public void findPurchaseOrderByNonExistID() {
         RestClient.getRequestSpec()
-                .get("/store/order/99")
+                .get("/store/order/999999999999999")
                 .then()
                 .statusCode(404);
     }
